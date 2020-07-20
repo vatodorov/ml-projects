@@ -1,0 +1,152 @@
+loan_status,delinq_2yrs,count
+Charged Off,0.0,37444
+Charged Off,1.0,5248
+Charged Off,2.0,1531
+Charged Off,3.0,552
+Charged Off,4.0,217
+Charged Off,5.0,121
+Charged Off,6.0,53
+Charged Off,7.0,35
+Charged Off,8.0,12
+Charged Off,9.0,9
+Charged Off,10.0,7
+Charged Off,11.0,3
+Charged Off,12.0,11
+Charged Off,13.0,1
+Charged Off,14.0,1
+Charged Off,15.0,1
+Charged Off,17.0,1
+Charged Off,18.0,1
+Current,0.0,479475
+Current,1.0,80407
+Current,2.0,24257
+Current,3.0,8822
+Current,4.0,4029
+Current,5.0,2036
+Current,6.0,1132
+Current,7.0,589
+Current,8.0,351
+Current,9.0,217
+Current,10.0,148
+Current,11.0,95
+Current,12.0,63
+Current,13.0,53
+Current,14.0,36
+Current,15.0,22
+Current,16.0,15
+Current,17.0,8
+Current,18.0,7
+Current,19.0,7
+Current,20.0,1
+Current,21.0,1
+Current,22.0,2
+Current,24.0,1
+Current,26.0,2
+Current,27.0,1
+Current,30.0,1
+Current,39.0,1
+Default,0.0,971
+Default,1.0,147
+Default,2.0,60
+Default,3.0,16
+Default,4.0,8
+Default,5.0,6
+Default,6.0,4
+Default,7.0,2
+Default,8.0,1
+Default,9.0,2
+Default,10.0,1
+Default,11.0,1
+Does not meet the credit policy. Status:Charged Off,0.0,642
+Does not meet the credit policy. Status:Charged Off,1.0,84
+Does not meet the credit policy. Status:Charged Off,2.0,23
+Does not meet the credit policy. Status:Charged Off,3.0,5
+Does not meet the credit policy. Status:Charged Off,4.0,3
+Does not meet the credit policy. Status:Charged Off,6.0,1
+Does not meet the credit policy. Status:Fully Paid,0.0,1663
+Does not meet the credit policy. Status:Fully Paid,1.0,202
+Does not meet the credit policy. Status:Fully Paid,2.0,60
+Does not meet the credit policy. Status:Fully Paid,3.0,18
+Does not meet the credit policy. Status:Fully Paid,4.0,7
+Does not meet the credit policy. Status:Fully Paid,5.0,5
+Does not meet the credit policy. Status:Fully Paid,6.0,2
+Does not meet the credit policy. Status:Fully Paid,7.0,2
+Does not meet the credit policy. Status:Fully Paid,8.0,1
+Does not meet the credit policy. Status:Fully Paid,11.0,1
+Does not meet the credit policy. Status:Fully Paid,13.0,1
+Fully Paid,0.0,174795
+Fully Paid,1.0,22931
+Fully Paid,2.0,6228
+Fully Paid,3.0,2020
+Fully Paid,4.0,823
+Fully Paid,5.0,420
+Fully Paid,6.0,210
+Fully Paid,7.0,106
+Fully Paid,8.0,74
+Fully Paid,9.0,41
+Fully Paid,10.0,23
+Fully Paid,11.0,17
+Fully Paid,12.0,13
+Fully Paid,13.0,3
+Fully Paid,14.0,7
+Fully Paid,15.0,3
+Fully Paid,16.0,2
+Fully Paid,17.0,1
+Fully Paid,18.0,3
+Fully Paid,19.0,1
+Fully Paid,22.0,1
+Fully Paid,29.0,1
+In Grace Period,0.0,4638
+In Grace Period,1.0,944
+In Grace Period,2.0,352
+In Grace Period,3.0,164
+In Grace Period,4.0,71
+In Grace Period,5.0,30
+In Grace Period,6.0,27
+In Grace Period,7.0,13
+In Grace Period,8.0,4
+In Grace Period,9.0,6
+In Grace Period,10.0,3
+In Grace Period,13.0,1
+Issued,0.0,6657
+Issued,1.0,1222
+Issued,2.0,337
+Issued,3.0,115
+Issued,4.0,49
+Issued,5.0,33
+Issued,6.0,10
+Issued,7.0,17
+Issued,8.0,6
+Issued,9.0,4
+Issued,10.0,5
+Issued,11.0,2
+Issued,13.0,2
+Issued,15.0,1
+Late (16-30 days),0.0,1758
+Late (16-30 days),1.0,358
+Late (16-30 days),2.0,134
+Late (16-30 days),3.0,40
+Late (16-30 days),4.0,31
+Late (16-30 days),5.0,17
+Late (16-30 days),6.0,7
+Late (16-30 days),7.0,6
+Late (16-30 days),8.0,3
+Late (16-30 days),9.0,1
+Late (16-30 days),14.0,1
+Late (16-30 days),15.0,1
+Late (31-120 days),0.0,8918
+Late (31-120 days),1.0,1681
+Late (31-120 days),2.0,569
+Late (31-120 days),3.0,225
+Late (31-120 days),4.0,89
+Late (31-120 days),5.0,43
+Late (31-120 days),6.0,25
+Late (31-120 days),7.0,14
+Late (31-120 days),8.0,9
+Late (31-120 days),9.0,4
+Late (31-120 days),10.0,5
+Late (31-120 days),11.0,2
+Late (31-120 days),12.0,2
+Late (31-120 days),13.0,3
+Late (31-120 days),20.0,1
+Late (31-120 days),21.0,1

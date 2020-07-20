@@ -1,0 +1,11 @@
+{
+   "op": "pipeline",
+   "attributes": {
+      "nodes": {
+         "type": "list",
+         "string": [
+            "random_forest_classifier_0b8496d8-c8be-11e8-965a-784f4390607b"
+         ]
+      }
+   }
+}

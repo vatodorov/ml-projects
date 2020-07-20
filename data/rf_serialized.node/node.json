@@ -1,0 +1,25 @@
+{
+   "name": "random_forest_classifier_1a1e8a06-c8bb-11e8-b086-784f4390607b",
+   "shape": {
+      "inputs": [
+         {
+            "name": "input_features",
+            "port": "features"
+         }
+      ],
+      "outputs": [
+         {
+            "name": "prediction_python",
+            "port": "prediction"
+         },
+         {
+            "name": "raw_prediction",
+            "port": "raw_prediction"
+         },
+         {
+            "name": "probability",
+            "port": "probability"
+         }
+      ]
+   }
+}

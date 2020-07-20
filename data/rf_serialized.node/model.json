@@ -1,0 +1,25 @@
+{
+   "op": "random_forest_classifier",
+   "attributes": {
+      "num_classes": {
+         "long": 2
+      },
+      "num_features": {
+         "long": 24
+      },
+      "tree_weights": {
+         "type": "list",
+         "double": [
+            1.0,
+            1.0
+         ]
+      },
+      "trees": {
+         "type": "list",
+         "string": [
+            "tree0",
+            "tree1"
+         ]
+      }
+   }
+}

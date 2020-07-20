@@ -1,0 +1,8 @@
+{
+   "op": "decision_tree_classifier",
+   "attributes": {
+      "num_features": {
+         "long": 24
+      }
+   }
+}

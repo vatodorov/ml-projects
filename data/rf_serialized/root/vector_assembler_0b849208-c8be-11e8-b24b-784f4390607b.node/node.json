@@ -1,0 +1,109 @@
+{
+   "name": "vector_assembler_0b849208-c8be-11e8-b24b-784f4390607b",
+   "shape": {
+      "inputs": [
+         {
+            "name": "loan_amnt",
+            "port": "input0"
+         },
+         {
+            "name": "funded_amnt",
+            "port": "input1"
+         },
+         {
+            "name": "funded_amnt_inv",
+            "port": "input2"
+         },
+         {
+            "name": "term",
+            "port": "input3"
+         },
+         {
+            "name": "int_rate",
+            "port": "input4"
+         },
+         {
+            "name": "installment",
+            "port": "input5"
+         },
+         {
+            "name": "emp_length",
+            "port": "input6"
+         },
+         {
+            "name": "annual_inc",
+            "port": "input7"
+         },
+         {
+            "name": "dti",
+            "port": "input8"
+         },
+         {
+            "name": "open_acc",
+            "port": "input9"
+         },
+         {
+            "name": "revol_bal",
+            "port": "input10"
+         },
+         {
+            "name": "revol_util",
+            "port": "input11"
+         },
+         {
+            "name": "total_acc",
+            "port": "input12"
+         },
+         {
+            "name": "out_prncp",
+            "port": "input13"
+         },
+         {
+            "name": "out_prncp_inv",
+            "port": "input14"
+         },
+         {
+            "name": "total_pymnt",
+            "port": "input15"
+         },
+         {
+            "name": "total_pymnt_inv",
+            "port": "input16"
+         },
+         {
+            "name": "total_rec_prncp",
+            "port": "input17"
+         },
+         {
+            "name": "total_rec_int",
+            "port": "input18"
+         },
+         {
+            "name": "collections_12_mths_ex_med",
+            "port": "input19"
+         },
+         {
+            "name": "rent",
+            "port": "input20"
+         },
+         {
+            "name": "application_type_individual",
+            "port": "input21"
+         },
+         {
+            "name": "grade_categorical",
+            "port": "input22"
+         },
+         {
+            "name": "purpose_categories",
+            "port": "input23"
+         }
+      ],
+      "outputs": [
+         {
+            "name": "input_features",
+            "port": "output"
+         }
+      ]
+   }
+}
