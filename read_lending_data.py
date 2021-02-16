@@ -2,16 +2,8 @@ import pandas as pd
 import numpy as np
 import sys
 import gc
-import shap
-import mleap.sklearn.preprocessing.data
-import mleap.sklearn.pipeline
-from mleap.sklearn.preprocessing.data import FeatureExtractor
-from mleap.sklearn.ensemble import forest
 import pickle
 from scipy import stats
-import statsmodels.api as statslr
-import statsmodels.formula.api as smf
-import xgboost as xgb
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import confusion_matrix, roc_curve, roc_auc_score, auc, f1_score, classification_report, \
@@ -22,13 +14,24 @@ from sklearn.tree import DecisionTreeClassifier, export_graphviz
 from sklearn.pipeline import Pipeline
 
 
+# import shap
+# import mleap.sklearn.preprocessing.data
+# import mleap.sklearn.pipeline
+# from mleap.sklearn.preprocessing.data import FeatureExtractor
+# from mleap.sklearn.ensemble import forest
+# import statsmodels.api as statslr
+# import statsmodels.formula.api as smf
+# import xgboost as xgb
+
+
+
 # Import the modeling utilities
-sys.path.insert(0, '/Users/valentint/Documents/GitRepos/GitHub/modelingpipeline/utility_functions')
+sys.path.insert(0, '/Users/valentint/Documents/GitRepos/modelingpipeline/utility_functions')
 import modeling_utilities as utils
 
 # Parameters
-shap.initjs()
-output_path = '/Users/valentint/Documents/GitRepos/GitHub/ml-projects/data/'
+#shap.initjs()
+output_path = '/Users/valentint/Documents/GitRepos/ml-projects/data/'
 seed_value = 7894
 sample_size = 0.1
 target = 'bad_loan'
@@ -229,49 +232,50 @@ y_test_ks = pd.DataFrame({'target': y_test,
 
 utils.compare_train_test(x_train, y_train_ks, x_test, y_test_ks, bins=30)
 
-# SHAP values
-explainer = shap.TreeExplainer(model)
-shap_values = explainer.shap_values(x_train)
-
-# Summarize the effects of all the features
-shap.summary_plot(shap_values, x_train, plot_type='bar', max_display=20)
-
-# Visualize the first prediction's explanation
-shap.force_plot(explainer.expected_value, shap_values[0, :], x_train.iloc[0, :], link='identity')
-
-# Create a SHAP dependence plot to show the effect of a single feature across the whole dataset
-shap.dependence_plot('ratio_prior_veh_incentive_msrp', shap_values, x_train)
-
-
-
-
-# Create an MLEAP bundle
-model = RandomForestClassifier(**rf_params)
-
-# Assemble features in a vector
-features_list = list(x_train.columns)
-
-feature_assembler = FeatureExtractor(input_scalars=features_list,
-                                     output_vector='input_features',
-                                     output_vector_items=['f_' + x for x in features_list])
-
-# Assemble a pipeline with features and initialize
-model.mlinit(input_features='input_features',
-             prediction_column='prediction_python',
-             feature_names=['f_' + x for x in features_list])
-
-model_pipeline = Pipeline([
-    (feature_assembler.name, feature_assembler),
-    (model.name, model)])
-
-model_pipeline.mlinit()
-
-# Train the pipeline
-model_pipeline.fit(x_train, y_train)
-
-# Serialiaze the random forest model and save
-model_pipeline.serialize_to_bundle(output_path, 'rf_serialized', init=True)
-
-# Code to edit the created bundle for use in Scala - Robert edited it manually, but this needs to be programatic
-
-
+## The code below works, but it requires to install SHAP and MLEAP packages
+# # SHAP values
+# explainer = shap.TreeExplainer(model)
+# shap_values = explainer.shap_values(x_train)
+#
+# # Summarize the effects of all the features
+# shap.summary_plot(shap_values, x_train, plot_type='bar', max_display=20)
+#
+# # Visualize the first prediction's explanation
+# shap.force_plot(explainer.expected_value, shap_values[0, :], x_train.iloc[0, :], link='identity')
+#
+# # Create a SHAP dependence plot to show the effect of a single feature across the whole dataset
+# shap.dependence_plot('ratio_prior_veh_incentive_msrp', shap_values, x_train)
+#
+#
+#
+#
+# # Create an MLEAP bundle
+# model = RandomForestClassifier(**rf_params)
+#
+# # Assemble features in a vector
+# features_list = list(x_train.columns)
+#
+# feature_assembler = FeatureExtractor(input_scalars=features_list,
+#                                      output_vector='input_features',
+#                                      output_vector_items=['f_' + x for x in features_list])
+#
+# # Assemble a pipeline with features and initialize
+# model.mlinit(input_features='input_features',
+#              prediction_column='prediction_python',
+#              feature_names=['f_' + x for x in features_list])
+#
+# model_pipeline = Pipeline([
+#     (feature_assembler.name, feature_assembler),
+#     (model.name, model)])
+#
+# model_pipeline.mlinit()
+#
+# # Train the pipeline
+# model_pipeline.fit(x_train, y_train)
+#
+# # Serialiaze the random forest model and save
+# model_pipeline.serialize_to_bundle(output_path, 'rf_serialized', init=True)
+#
+# # Code to edit the created bundle for use in Scala - Robert edited it manually, but this needs to be programatic
+#
+#
